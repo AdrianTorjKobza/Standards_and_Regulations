@@ -1,0 +1,1 @@
+Patient Sarah Jenkins was seen today for symptoms matching ICD-10 J45.909. Provider NPI: 1234567890.
