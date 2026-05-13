@@ -55,7 +55,7 @@ PHI Sanity Check.........................................................Failed
    [!] Found: NPI_ID
 
 [STRICT POLICY] Commit blocked. Please remove PHI from the files above.
-
+```
 ## Running Tests
 ```bash
 # To verify the NER engine is working correctly
