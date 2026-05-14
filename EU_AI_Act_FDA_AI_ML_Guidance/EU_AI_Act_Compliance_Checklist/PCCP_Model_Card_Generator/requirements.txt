@@ -1,8 +1,0 @@
-mlflow
-fpdf2
-pandas
-scikit-learn
-fairlearn
-matplotlib
-seaborn
-pyyaml
