@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pccp-gen"
+version = "0.1.0"
+description = "Automated FDA PCCP / EU AI Act Model Card Generator"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Protos" }
+]
+dependencies = [
+    "mlflow",
+    "fpdf2",
+    "pandas",
+    "scikit-learn",
+    "fairlearn",
+    "matplotlib",
+    "seaborn",
+    "pyyaml",
+]
+
+[project.scripts]
+pccp-gen = "pccp_gen.cli:main"
+
+[tool.setuptools]
+packages = ["pccp_gen"]
