@@ -1,0 +1,20 @@
+project_metadata:
+  name: "GxP Validation Wrapper for LLMs POC"
+  version: "1.0.0"
+  compliance_target: "GxP / IEC 62304"
+
+model_parameters:
+  provider: "ollama"
+  model_name: "llama3"
+  temperature: 0.0  # Required for deterministic behavior
+  top_p: 1.0
+  seed: 42          # Static seed for reproducibility
+
+validation_rules:
+  forbidden_terms:
+    - "guarantee"
+    - "cure"
+    - "diagnose"
+    - "miracle"
+  min_summary_length: 20
+  max_summary_length: 150
